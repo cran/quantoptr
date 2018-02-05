@@ -8,7 +8,6 @@
 #'   It also considers the problem of estimating dynamic quantile- and mean-optimal TRs when 
 #'   the decision-making process has two stages.
 #'  
-#'  
 #'   
 #' @details    
 #' Treatment regimes (TRs) are decision rules that recommend treatments based on 
@@ -41,15 +40,15 @@
 #'  while other supporting functions begin with lower-case letters.
 #' 
 #' 
-#' 
 #' @references 
 #' \insertRef{zhang2012robust}{quantoptr}
 #' 
 #' \insertRef{zhang2013robust}{quantoptr}
 #' 
-#' \insertRef{wang2016quant}{quantoptr}
+#' \insertRef{wang2017quantile}{quantoptr}
 #' 
 #' \insertRef{murphy2005generalization}{quantoptr}
 #' 
-"_PACKAGE"
-#> [1] "_PACKAGE"
+#' @docType package
+#' 
+

@@ -76,7 +76,7 @@
 #'  are returned \emph{in two scales:}
 #' \enumerate{
 #'    \item , the returned \code{coef.k} 
-#'      is the set of parameters that we estimated after standarding
+#'      is the set of parameters that we estimated after standardizing
 #'      every covariate available for decision-making
 #'      at stage \code{k} to be in the interval [0, 1]. To be exact, every covariate is 
 #'    subtracted by the smallest observed value and divided by the difference between 
@@ -115,7 +115,7 @@
 #' @import quantreg
 #' 
 #' @examples
-#' library(faraway)
+#' ilogit <- function(x) exp(x)/(1 + exp(x))
 #' GenerateData.2stg <- function(n){
 #'  x1 <- runif(n)
 #'  p1 <- ilogit(-0.5+x1)

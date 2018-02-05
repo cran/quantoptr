@@ -19,9 +19,10 @@
 #' 
 #' 
 #' @references 
-#' \insertRef{wang2016quant}{quantoptr}
+#' \insertRef{wang2017quantile}{quantoptr}
 #' 
 #' @importFrom rgenoud genoud
+#' @importFrom Rdpack insert_ref
 #' @import stats
 #' @export
 qestimate<-function(tau, x, y, a, prob, p_level,nvars,hard_limit,max=TRUE,

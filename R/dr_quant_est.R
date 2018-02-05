@@ -55,7 +55,7 @@
 #' See the reference paper for a more formal explanation.
 #' 
 #' @references 
-#' \insertRef{wang2016quant}{quantoptr}
+#' \insertRef{wang2017quantile}{quantoptr}
 #'
 #' @return
 #' It returns a list object, consisting of the following elements:
@@ -71,7 +71,7 @@
 #'  }
 #'  
 #' @examples
-#' library(faraway)
+#' ilogit <- function(x) exp(x)/(1 + exp(x))
 #' GenerateData.DR <- function(n)
 #' {
 #'   x1 <- runif(n,min=-1.5,max=1.5)

@@ -110,11 +110,11 @@ For every stage \code{k}, \eqn{k=1,2}, this estimated parameters indexing the
 two-stage quantile-optimal treatment regime are returned \emph{in two scales:}
 \enumerate{
    \item , the returned \code{coef.k} 
-     is the set of parameters that we estimated after standarding
+     is the set of parameters that we estimated after standardizing
      every covariate available for decision-making
      at stage \code{k} to be in the interval [0, 1]. To be exact, every covariate is 
    subtracted by the smallest observed value and divided by the difference between 
-   the largest and the smallest value.  Next, we carried out the algorithm in Wang et. al. 2016 to get the estimated
+   the largest and the smallest value.  Next, we carried out the algorithm in Wang et. al. 2017 to get the estimated
    regime parameters, \code{coef.k}, based on the standardized data. 
    For the identifiability issue, we force the Euclidean norm of \code{coef.k}
    to be 1.
@@ -136,7 +136,7 @@ If, for every input covariate, the smallest observed value is exactly 0 and the 
 \code{coef.k} and \code{coef.orgn.scale.k} will render identical.
 }
 \examples{
-library(faraway)
+ilogit <- function(x) exp(x)/(1 + exp(x))
 GenerateData.2stg <- function(n){
  x1 <- runif(n)
  p1 <- ilogit(-0.5+x1)
@@ -171,7 +171,7 @@ fit <- TwoStg_Qopt(data=testdata, tau=0.2,
 }
 }
 \references{
-\insertRef{wang2016quant}{quantoptr}
+\insertRef{wang2017quantile}{quantoptr}
 }
 \author{
 Yu Zhou, \email{zhou0269@umn.edu}

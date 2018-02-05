@@ -4,11 +4,9 @@
 #' 
 #' 
 #' 
-#' 
 #' @param max logical. If \code{max=TRUE}, it indicates we wish to maximize the marginal
 #' mean; If \code{max=FALSE}, we wish to minimize the marginal mean. The default is \code{TRUE}.
 #' @inheritParams IPWE_Qopt
-#'
 #'
 #'
 #'

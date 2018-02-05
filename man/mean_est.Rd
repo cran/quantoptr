@@ -30,6 +30,5 @@ estimator proposed by Baqun Zhang et. al..
 This function supports the \code{\link{mestimate}} function.
 }
 \references{
-Zhang, Baqun, et al. "A robust method for estimating optimal treatment regimes." 
-Biometrics 68.4 (2012): 1010-1018.
+\insertRef{zhang2012robust}{quantoptr}
 }

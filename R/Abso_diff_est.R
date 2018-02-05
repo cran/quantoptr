@@ -22,7 +22,7 @@
 #' @seealso The function \code{\link{IPWE_MADopt}} is based on this function.
 #' 
 #' @references 
-#' \insertRef{wang2016quant}{quantoptr}
+#' \insertRef{wang2017quantile}{quantoptr}
 #' 
 #' @examples
 #' library(stats)

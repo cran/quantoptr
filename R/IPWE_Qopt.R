@@ -70,7 +70,7 @@
 #'    \item The returned \code{coefficients} is the set of parameters after covariates \eqn{X} 
 #'    are standardized to be in the interval [0, 1]. To be exact, every covariate is 
 #'    subtracted by the smallest observed value and divided by the difference between 
-#'    the largest and the smallest value.  Next, we carried out the algorithm in Wang 2016 to get the estimated
+#'    the largest and the smallest value.  Next, we carried out the algorithm in Wang et al. 2017 to get the estimated
 #'    regime parameters, \code{coefficients}, based on the standardized data. 
 #'    For the identifiability issue, we force the Euclidean norm of \code{coefficients}
 #'    to be 1.
@@ -90,7 +90,7 @@
 #'    \code{coefficients} and \code{coef.orgn.scale} will render identical.
 #' 
 #' @references 
-#' \insertRef{wang2016quant}{quantoptr}
+#' \insertRef{wang2017quantile}{quantoptr}
 #' 
 #' @author Yu Zhou, \email{zhou0269@umn.edu} with substantial contribution from Ben Sherwood.
 #' @export
@@ -199,7 +199,7 @@ IPWE_Qopt <- function(data, regimeClass, tau, moPropen="BinaryRandom",
                                            FUN = function(x) (x-min(x))/(max(x)-min(x)))[,-1])
   
   if (moPropen =="BinaryRandom"){
-    ph <- rep(data[,txname], nrow(p.data))
+    ph <- rep(mean(data[,txname]), nrow(p.data))
   } else {
     moPropen <- as.formula(moPropen)
     logistic.model.tx <- glm(formula = moPropen, data = data, family=binomial)

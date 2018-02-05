@@ -48,7 +48,7 @@
 #'    \item The returned \code{coefficients} is the set of parameters after covariates \eqn{X} 
 #'    are standardized to be in the interval [0, 1]. To be exact, every covariate is 
 #'    subtracted by the smallest observed value and divided by the difference between 
-#'    the largest and the smallest value.  Next, we carried out the algorithm in Wang 2016 to get the estimated
+#'    the largest and the smallest value.  Next, we carried out the algorithm in Wang et al. 2017 to get the estimated
 #'    regime parameters, \code{coefficients}, based on the standardized data. 
 #'    For the identifiability issue, we force the Euclidean norm of \code{coefficients}
 #'    to be 1.
@@ -57,7 +57,7 @@
 #'     so the associated decision rule can be applied directly to novel observations. 
 #'     In other words, let \eqn{\beta} denote the estimated parameter in the original 
 #'    scale, then the estimated treatment regime is:  
-#'        \deqn{ d(x)= I\{\hat{\beta}_0 + \hat{\beta}_1 x_1 + ... + \hat{\beta}_k x_k > 0\}.}{
+#'        \deqn{ d(x;\bm{\hat{\beta}})= I\{\hat{\beta}_0 + \hat{\beta}_1 x_1 + ... + \hat{\beta}_k x_k > 0\}.}{
 #'         d(x)= I{\beta_0 + \beta_1*x_1 + ... + \beta_k*x_k > 0}.}
 #'    The estimated \eqn{\bm{\hat{\beta}}}{\beta} is returned as \code{coef.orgn.scale}.
 #'    The same as \code{coefficients}, we force the Euclidean norm of \code{coef.orgn.scale}
@@ -70,7 +70,7 @@
 #' 
 #' 
 #' @references 
-#' \insertRef{wang2016quant}{quantoptr}
+#' \insertRef{wang2017quantile}{quantoptr}
 #' 
 #' @export
 #' 

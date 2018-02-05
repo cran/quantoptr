@@ -51,7 +51,7 @@ The wrapper function for quantile-optimal treatment regime that calls a genetic 
 This function supports the \code{\link{IPWE_Qopt}} function.
 }
 \references{
-\insertRef{wang2016quant}{quantoptr}
+\insertRef{wang2017quantile}{quantoptr}
 }
 \seealso{
 The function \code{\link{IPWE_Qopt}} is based on this function.

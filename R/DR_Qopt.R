@@ -110,7 +110,7 @@
 #' @export
 #'
 #' @references 
-#' \insertRef{wang2016quant}{quantoptr}
+#' \insertRef{wang2017quantile}{quantoptr}
 #' 
 #'
 #'
@@ -119,7 +119,7 @@
 #' @import quantreg
 #' @importFrom stringr str_replace_all
 #' @examples
-#' library(faraway)
+#' ilogit <- function(x) exp(x)/(1 + exp(x))
 #' GenerateData.DR <- function(n)
 #' {
 #'  x1 <- runif(n,min=-1.5,max=1.5)

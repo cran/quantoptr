@@ -109,7 +109,7 @@ For every stage \code{k}, \eqn{k=1,2}, this estimated parameters indexing the tw
  are returned \emph{in two scales:}
 \enumerate{
    \item , the returned \code{coef.k} 
-     is the set of parameters that we estimated after standarding
+     is the set of parameters that we estimated after standardizing
      every covariate available for decision-making
      at stage \code{k} to be in the interval [0, 1]. To be exact, every covariate is 
    subtracted by the smallest observed value and divided by the difference between 
@@ -135,7 +135,7 @@ If, for every input covariate, the smallest observed value is exactly 0 and the 
 \code{coef.k} and \code{coef.orgn.scale.k} will render identical.
 }
 \examples{
-library(faraway)
+ilogit <- function(x) exp(x)/(1 + exp(x))
 GenerateData.2stg <- function(n){
  x1 <- runif(n)
  p1 <- ilogit(-0.5+x1)

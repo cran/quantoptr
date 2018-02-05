@@ -73,7 +73,7 @@ abso_diff_est(beta=c(1,2,-1),
 }
 }
 \references{
-\insertRef{wang2016quant}{quantoptr}
+\insertRef{wang2017quantile}{quantoptr}
 }
 \seealso{
 The function \code{\link{IPWE_MADopt}} is based on this function.

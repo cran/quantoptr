@@ -78,7 +78,7 @@ Similarly, this function the pseudo-response for treatment 1 will be estimated a
 See the reference paper for a more formal explanation.
 }
 \examples{
-library(faraway)
+ilogit <- function(x) exp(x)/(1 + exp(x))
 GenerateData.DR <- function(n)
 {
   x1 <- runif(n,min=-1.5,max=1.5)
@@ -134,5 +134,5 @@ testdata.parallel <- GenerateData.DR(n)
  
 }
 \references{
-\insertRef{wang2016quant}{quantoptr}
+\insertRef{wang2017quantile}{quantoptr}
 }

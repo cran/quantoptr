@@ -160,7 +160,7 @@ estimate the quantile-optimal treatment regime. The double robustness
 }
 }
 \examples{
-library(faraway)
+ilogit <- function(x) exp(x)/(1 + exp(x))
 GenerateData.DR <- function(n)
 {
  x1 <- runif(n,min=-1.5,max=1.5)
@@ -222,7 +222,7 @@ testdata <- GenerateData.DR(n)
 
 }
 \references{
-\insertRef{wang2016quant}{quantoptr}
+\insertRef{wang2017quantile}{quantoptr}
 }
 \seealso{
 \code{\link{dr_quant_est}}, \code{\link{augX}}

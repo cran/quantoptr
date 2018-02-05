@@ -9,8 +9,8 @@
 #'
 #' @inheritParams abso_diff_est
 #'
-#' @references Zhang, Baqun, et al. "A robust method for estimating optimal treatment regimes." 
-#' Biometrics 68.4 (2012): 1010-1018.
+#' @references 
+#' \insertRef{zhang2012robust}{quantoptr}
 #' 
 #' @export
 mean_est<-function(beta,x,a,y,prob)
